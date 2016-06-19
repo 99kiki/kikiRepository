@@ -1,4 +1,63 @@
-# Welcome to Onsen UI 2!
+#  TODO アプリ設計
 
-This template is using Onsen UI, a HTML5 framework that is focusing on the speed and ease of use.
-For details, please check out [Onsen UI Website](http://onsenui.io) and [the documents](http://onsenui.io/v2/).
+【画面】
+  ・リスト画面
+    項目
+    ┣メモボタン
+    ┣TODO項目エリア
+    ┣日付ラベル
+    ┣完了予定日ラベル
+    ┣メモラベル
+    ┣優先度アイコン
+    ┗タイトル
+
+    イベント
+    ・初期表示
+
+    タスクテーブルより取得した情報をもとにTODO項目エリアを作成
+
+    ・メモボタンタップ
+
+    メモ入力モーダル表示
+
+    ・TODO項目エリアフリック
+
+    削除確認メッセージ出力
+        はいタップ
+            TODO項目を完了とし、エリアを削除
+            画面再描画
+        いいえタップ
+            なにもしない
+
+
+  ・メモ入力モーダル画面
+    項目
+    ┣入力エリア（テキストボックス）
+    ┣完了予定日入力欄（ドラム）
+    ┣優先度プルダウン（セレクトボックス）
+    ┣TODO作成ボタン
+    ┗閉じるボタン
+
+    イベント
+    ・TODO作成ボタンタップ
+
+    入力された項目をDB登録する
+    入力内容をすべてクリアする
+
+    ・閉じるボタンタップ
+
+    メモ入力モーダルを閉じる
+    入力内容をすべてクリアする
+
+
+【DB】
+  テーブル名
+  ┗タスクテーブル
+  ・ID
+  ・日付（yyyy/MM/dd）
+  ・完了予定日付（yyyy/MM/dd）
+  ・優先度（1:低、2:中、3:高）
+  ・メモ内容
+  ・完了/未完了（0:未完了、1:完了）
+
+
